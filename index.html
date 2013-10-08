@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="images/logo.png" />
+<meta property="og:url" content="http://www.saxifrageschool.org" />
+<meta property="og:description" content=" A higher education innovation laboratory. Learn to Build, Program and Grow; ask big questions and discover what you love to do." />
+<meta property="og:title" content="The Saxifrage School" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>The Saxifrage School - Higher Ed Innovation Laboratory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/flexslider.css" type="text/css" rel="stylesheet" media="screen">
+<link href="css/tipsy.css" type="text/css" rel="stylesheet" media="screen">
+<link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="js/jquery.visualNav.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.jigowatt.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+    google.setOnLoadCallback(initialize);
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/tumblr/EJwT");
+      feed.setNumEntries(6);
+      feed.setResultFormat(google.feeds.Feed.JSON_FORMAT);
+      feed.load(function(result) {
+        // $.each(result.feed.entries, function(){
+        //     $("section#blog div.center").appendChild("<div>this is stuff</div>");
+        //     // console.log("eq: "+);
+        //     console.log($(this));
+        //   });
+        if (!result.error) 
+              {
+           var container = document.getElementById("blogfeed");
+
+          for (var i = 0; i < result.feed.entries.length; i++) 
+          {  
+            var entry = result.feed.entries[i];
+            var last = "";
+            if ((i+1) % 3 == 0) {
+              last = " last";
+            }
+            var article = document.createElement("article");
+            article.innerHTML = '<div class="blog_entry one_third'+ last +'"><h3><a href="' + entry.link + '">' + entry.title + '</a><cite> ' + entry.author + '</cite></h3><p>' + entry.contentSnippet + '</p></div>';
+            container.appendChild(article);
+          }
+        }
+      });
+    }
+
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27226011-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div id="page">
+  <aside id="header">
+    <h3 id="logo"><a href="index.html"><img src="images/logo.png"></a></h3>
+    <nav id="main-nav">
+      <ul>
+          <li><a class="menu" href="#home">Home</a></li>
+          <li><a class="menu" href="#about">About</a></li>
+          <li><a class="menu" href="#team">Team</a></li>
+          <li><a class="menu" href="#classes">Classes</a></li>
+          <!--<li><a class="menu" href="#summerforum">Forum</a></li>
+          <li><a class="menu" href="#crashcourse">CrashCourse</a></li>-->
+          <li><a class="menu" href="#lectures">Lectures</a></li>
+          <li><a class="menu" href="#donate">Donate</a></li>
+          <li><a class="menu" href="#blog">blog</a></li>
+      </ul>
+    </nav>
+    <div class="widget">
+      <ul class="social">
+        <li class="twitter"><a href="http://www.twitter.com/saxifrageschool" class="tip" title="Twitter"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+        <li class="facebook"><a href="http://www.facebook.com/217607328251808" class="tip" title="Facebook"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <div class="view">
+        <h4>Viewing</h4>
+        <div class="view_holder"> <span class="monitor">&nbsp;</span> <span class="ipad">&nbsp;</span> <span class="iphone">&nbsp;</span> </div>
+      </div>
+    </div>
+  </aside>
+  <section id="main">
+    <div id="home" class="content">
+      <h2 class="intro">        <strong>The Saxifrage School</strong> is a higher education laboratory working to lower costs, re-think the campus, and reconcile disciplines. </h2>
+      
+      <div id="mc_embed_signup">
+            <form action="http://saxifrageschool.us5.list-manage1.com/subscribe/post?u=1a512028b208a111fcf2165f7&amp;id=e0a2dc0e55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+               <label for="mce-EMAIL">Subscribe and stay updated about our work:</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+           </form>
+      </div>
+      <div class="flexslider clearfix">
+        <ul class="slides">
+          <li><a href="#"><img src="images/pennave.png" alt="Image" /></a></li>
+          <li><a href="#"><img src="images/thomasbuilding.png" alt="Image" /></a></li>
+          <li><a href="#"><img src="images/chard.png" alt="Image" /></a></li>
+        </ul>
+
+        <div align="center"><h2>The Neighborhood is the Campus.</h2></div>
+      </div>  <h2 class="intro">Sign up for <a href="#classes">classes</a> today!</h2>
+      <hr class="divider">
+      <h2 style="text-align:center;" >There are 3 Big <span class="problem">Problems</span>. We have 3 Small <span class="idea">Ideas</span>.</h2>
+      <hr class="divider">
+      <div class="columns">
+        <div class="first one-third"> <img src="images/money.svg" alt="Icon" class="center">
+          <h4 class="aligncenter"><span class="problem">$1,000,000,000,000 in Debt</span></h4>
+          <p class="aligncenter">Over the past thirty years, the cost of higher education has risen more than any other industry.</p>
+        </div>
+        <div class="one-third"> <img src="images/campus.svg" alt="Icon" class="center">
+          <h4 class="aligncenter"><span class="problem">Underused Neighborhoods</span></h4>
+          <p class="aligncenter">One of the biggest issues (and greatest assets) of many rust-belt cities, like Pittsburgh, is the amount of underutilized space. </p>
+        </div>
+        <div class="one-third"> <img src="images/college.svg" alt="Icon" class="center">
+          <h4 class="aligncenter"><span class="problem">50% Drop-Out Rates</span></h4>
+          <p class="aligncenter">Right now, only 50% of college students are graduating within 6 years. Students increasingly lack a sense of focus and motivation.</p>
+        </div>
+
+         <div class="first one-third"> <img src="images/dollar.svg" alt="Icon" class="center">
+          <h4 class="aligncenter idea">Lower Tuition</h4>
+          <p class="aligncenter">By simplifying the transaction between teacher and student, building student responsibility, and operating a non-traditional campus we can significantly lower costs to about one-sixth that of some comparable programs without moving the learning community online.</p>
+        </div>
+        <div class="one-third"> <img src="images/campus.svg" alt="Icon" class="center">
+          <h4 class="aligncenter idea"><a href="campus.html">Nomadic Campus</a></h4>
+          <p class="aligncenter">Rather than operating our own buildings, the neighborhood will be the campus. The community will benefit from increased investment while students will benefit from a real-world context for their studies.</p>
+        </div>
+        <div class="one-third"> <img style="padding-bottom: 18px; margin-top:20px;" src="images/reconcile.svg" alt="Icon" class="center">
+          <h4 class="aligncenter idea">Reconcile Theory and Practice</h4>
+          <p class="aligncenter">Students will be challenged to engage with real problems in the community, learning—through experience—both how to make what is valuable and question the value of what is made. Our instructors are serious about mentorship and helping students capture their achievements in professional portfolios.</p>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="columns">
+        <div class="one-whole">
+          <blockquote>
+            <p>[Students] should not play life, or study it merely, while the community supports them at this expensive game, but earnestly live it from beginning to end. .</p>
+            <p>&mdash; <cite>Henry David Thoreau, <a href="http://thoreau.eserver.org/walden1d.html">Walden</a></cite></p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <!-- END: .content -->
+    <div id="about" class="content">
+      <div class="page_title">
+        <h2>About</h2>
+      </div>
+      <h3 class="aligncenter">Learn About the Idea...</h3>
+
+        <h4>Join us for one of our monthly public meetings. Our "Saxifrage 101" gatherings offer a chance to learn about our work and join our open conversation on the future of higher education.<a href="https://www.facebook.com/events/196517337138747/"> RSVP on Facebook </a>  or e-mail <a href="mailto:andrew@saxifrageschool.org">Andrew Heffner</a></h4>
+                      <hr class="divider">
+      <div class="video-container">
+        <iframe src="http://player.vimeo.com/video/34760137?title=0&byline=0&portrait=0" width="800" height="450" frameborder="0"></iframe>
+      </div>
+      <h2>While we continue our work as a laboratory for new ideas, we are dreaming big about the future. This video describes our early concept for founding a full-fledged college here in Pittsburgh. </h2>
+      <hr class="divider">
+        <div class="columns">
+
+          <div class="first one-third"><img src="images/book.svg" alt="Image" class="center">
+            <h4 class="aligncenter"> <a href="resources.html">Further Reading</a></h4>
+            <p class="aligncenter">Check out our <a href="resources.html"> resource page</a> for articles written about our work, a glance at our reading list, and links to other interesting projects in higher education.</p>
+          </div>
+          <div class="one-third"><img src="images/campus.svg" alt="Image" class="center">
+            <h4 class="aligncenter"><a href="campus.html">Our Campus Model</a></h4>
+            <p class="aligncenter">At the core of the Saxifrage School model is our <a href="campus.html"> nomadic campus.</a> We're re-thinking the traditional campus model to better serve students, the economy, and our neighborhoods.</p>
+          </div>
+          <div class="one-third"><img src="images/question_mark.svg" alt="Image" class="center">
+            <h4 class="aligncenter"> <a href="why.html">Why Do This?</a></h4>
+            <p class="aligncenter">Deconstructing higher education is a large and complex undertaking, but we have a great sense of urgency for our work. Here are a few of the reasons <a href="why.html"> why </a>we are working to change the future of higher education.</p>
+          </div>       
+    <!-- END: Column Row -->
+          <div class="first one-third"><img src="images/pyramid.svg" alt="Image" class="center">
+            <h4 class="aligncenter"><a href="/resources/one_sheet.pdf">The Major Issues</a></h4>
+            <p class="aligncenter">We can summarize the work we are doing by talking about 3 main issues and some of our plans to address them. While this isn't the full story, it's a great <a href="/resources/one_sheet.pdf"> summary </a>of who we are and what we are doing. This is a great one-sheet to print and share.</p>
+          </div>
+          <div class="one-third"><img src="images/compass.svg" alt="Image" class="center">
+            <h4 class="aligncenter"><a href="philosophy.html">Academic Philosophy</a></h4>
+            <p class="aligncenter">A while back we wrote the beginnings of an Academic Philosophy that should shape our plans as we continue our work. This<a href="philosophy.html"> philosophy</a> is likely not complete, but it showcases a number of the main tenets we believe are important to ensure the quality of the Saxifrage School's programs.</p>
+          </div>
+          <div class="one-third"><img src="images/page.svg" alt="Image" class="center">
+            <h4 class="aligncenter"> <a href="/resources/one_sheet.pdf">Archived Blog</a></h4>
+            <p class="aligncenter">Coming soon! <a href="/resources/one_sheet.pdf"> Old posts </a>from the beginnings of the project. Check out these archives for some of the history, brainstorming, and early conversations about the Saxifrage School.</p>
+          </div>   
+              <!-- END: Column Row -->
+        </div>
+
+    </div>
+
+        <!-- END: About -->
+    <div id="team" class="content">
+      <div class="page_title">
+        <h2>Team</h2>
+      </div>
+
+      <div class="columns">
+        <div class="first one-third staff"> <img src="images/tim_thumbnail.png" alt="Staff" class="center">
+          <h4 class="aligncenter"><a href="mailto:tim@saxifrageschool.org">Tim Cook</a></h4>
+          <h5>Founding Director</h5>
+          <p class="aligncenter">The CEO. Tim has been researching new directions in higher education for the past 5 years.  He directs the work and vision of the Saxifrage School, researches, writes and speaks on higher education, and plans new programs.</p>
+        </div>
+        <div class="one-third staff"> <img src="images/andrew_thumbnail.png" alt="Staff" class="center">
+          <h4 class="aligncenter"><a href="mailto:andrew@saxifrageschool.org">Andrew Heffner</a></h4>
+          <h5>Director of Community</h5>
+          <p class="aligncenter">Andrew is the main point of contact to the community. Aside from studying Higher Education at the graduate level, Andrew is an serious student of culture: music, film, art, and literature. He builds new partnerships and gathers support to make our work possible.</p>
+        </div>
+        <div class="one-third staff"> <img width="75" src="images/justin_thumbnail.png" alt="Staff" class="center">
+          <h4 class="aligncenter"><a href="mailto:justin@saxifrageschool.org">Justin Seaman</a></h4>
+          <h5>Director of Operations</h5>
+          <p class="aligncenter">Justin works to make the ship sail smoothly. In addition to managing classroom, finance, and registration logistics, Justin helps to design and implement new programs.</p>
+        </div>
+            <!-- END: Column Row -->
+            <div class="first one-third staff"> <img src="images/maralynn.png" alt="Staff" class="center">
+          <h4 class="aligncenter">Maralynn Jacoby</h4>
+          <h5>Graphic Design Instructor</h5>
+          <p class="aligncenter">Maralynn is a visual artist, graphic, print, and web designer with 10 years of professional experience. She is currently an independent professional working for a broad range of local and national clients doing book covers, website design, branding, and custom artwork. Her website is <a href="http://www.maralynnj.com">www.maralynnj.com</a>.</p>
+        </div>
+        <div class="one-third staff"> <img width="75" src="images/ian.jpg" alt="Staff" class="center">
+          <h4 class="aligncenter">Ian Kane</h4>
+          <h5>Computer Programing Instructor</h5>
+          <p class="aligncenter">Ian Luke Kane is a math guy and technology professional. Specifically, he has worked with relational databases, data analysis, reporting, and business intelligence for the last 8 years. He's currently a Data Systems Architect. He has an undergraduate degree in mathematics from Grove City College and a Master of Science in Information Technology degree from Carnegie Mellon. His website is <a href="http://www.logicnest.com/">here</a>.</p></p>
+        </div>
+        <div class="one-third staff"> <img src="images/wade.png" alt="Staff" class="center">
+          <h4 class="aligncenter">Wade Caruso</h4>
+          <h5>Carpentry Instructor</h5>
+          <p class="aligncenter">Wade Caruso has worked as a carpenter for over 10 years. His experience includes sustainable construction techniques, timber framing, and solar panel installation. More recently, he has worked as a independent contractor doing custom renovation projects and has a small business designing and fabricating custom furniture pieces. Wade specializes in fabrication projects using salvaged materials.</p>
+        </div>
+        <!-- END: Column Row -->
+        <div class="first one-third staff"> <img width="75" src="images/lara.jpg" alt="Staff" class="center">
+          <h4 class="aligncenter">Lara Schenck</h4>
+          <h5>Computer Programming Instructor</h5>
+          <p class="aligncenter">Lara is a freelance web designer/developer and has worked extensively in WordPress development, responsive web design, UI/UX design, and mobile interfaces. She places high value on self-taught technical skills and is passionate about education reform. Lara is pursuing a career in game-based curriculum design for undergraduate core and liberal arts programs. Her website is <a href="http://notlaura.com/">notlaura.com</a></p>
+        </div>
+        <div class="one-third staff"> <img src="images/evaine_thumbnail.png" alt="Staff" class="center">
+          <h4 class="aligncenter">Evaine Sing</h4>
+          <h5>Mapping/GIS Instructor</h5>
+          <p class="aligncenter">Evaine is a registered Landscape Architect with a BLA from Virginia Tech and a Masters in Public Policy & Management at the Heinz College of Carnegie Mellon University. She works at <a href="http://gtechstrategies.org/">gtech</a>, focusing on Community and Economic Development as it relates to the issue of vacant land management within the urban context. She has helped instruct multiple GIS and mapping courses at CMU and CCAC.</p>
+        </div>
+        <div class="one-third staff"> <img src="images/natalie_thumbnail.png" alt="Staff" class="center">
+          <h4 class="aligncenter">Natalie Robb</h4>
+          <h5>Graphic Design Instructor</h5>
+          <p class="aligncenter">Natalie Robb recently moved back to Pittsburgh from Brooklyn, NY. She works as a freelance web designer and illustrator and loves what she does. Her professional portfolio contains a great deal of work done for <a href="http://www.modcloth.com/">ModCloth</a>. Find her website at <a href="http://www.natalierobb.com/">www.natalierobb.com</a>.</p>
+        </div>
+            <!-- END: Column Row -->
+      </div>
+    </div>
+
+    <!-- END: .content -->
+    <div id="classes" class="content">
+      <div class="page_title">
+        <h2>Classes</h2>
+      </div>
+      <div class="columns">
+        <div class="first one-half"> <img class="icon" src="images/construction.svg" alt="Icon">
+          <div class="excerpt">
+            <h3>Woodshop Primer and Box-Building</h3>
+            <p>(This course has ended). Learn safe and expert use of our woodshop's tools and practice your skills building the most useful of items: a Box! Your box could be: a beehive, a toolbox, planter box, crate, whatever you desire. Special emphasis in this course will be placed on teaching students to utilize tools and simple/pratical methods with basic tools they can cheaply acquire and use after the course is complete. </p>
+          </div>
+        </div>
+        <div class="one-half"> <img class="icon" src="images/computer.svg" alt="Icon">
+          <div class="excerpt">
+            <h3><a href="program.html">Intro to Full-Stack Web Development</a></h3>
+            <h5>Spots are now open for our October, 2013 twelve-week course.</h5><p>The theory and practice of Web Development for beginners. You get a full-day workshop, 12 classes, and 12 small group workshops. Topics will include: HTML5, CSS3, Javascript, Git, Github, UX, Open-Source philosophy, Hacker culture, human-computer interaction, etc.</p>
+          </div>
+        </div>
+        <div class="first one-half"> <img class="icon" src="images/leaf.svg" alt="Icon">
+          <div class="excerpt">
+            <h3><a href="grow.html">Organic Agriculture</a></h3>
+            <h5>Spots are available for our Summer, 2013 twelve-week course. Classes are held on Monday evenings.</h5><p>The theory and practice of organic agriculture for beginners. Topics will include: composting, environmental ethics, soil science, food politics, companion planting, crop rotation, planting, pest/disease control, seed saving, permaculture, and season extension.</p>
+          </div>
+        </div>
+        <div class="one-half"> <img class="icon" src="images/bomb.svg" alt="Icon">
+          <div class="excerpt">
+            <h3><a href="visualdesign.html">Graphic and User-Centered Design</a></h3>
+             <p>Regardless of our job descriptions, we're all accidental designers. It's about time we learned how to do it really well. In this 14-week course you will learn the theory and practice of visual/graphic and user-centered design. The course is split into 3 parts: graphic design training (to make things look good), user-centered design research (to make things true and compelling), and a cumulative project for a real client (to give you real experience).</p>
+          </div>
+        </div>
+        <div class="first one-half"> <img class="icon" src="images/lecturer.svg" alt="Icon">
+          <div class="excerpt">
+            <h3><a href="maps.html">Maps and GIS (Hybrid)</a></h3>
+            <p>In this experimental class, you will engage in a hybrid learning experience that brings together the best of online learning and the best of real world practice. Students will register and fully participate in the upcoming Coursera&copy; class "Maps and the Geospatial Revolution" while meeting in-person with our expert instructor and fellow students to contextualize and implement their mapping skills through project-based learning.</p>
+          </div>
+        </div>
+        <div class="one-half"> <img class="icon" src="images/construction.svg" alt="Icon">
+          <div class="excerpt">
+            <h3><a href="build.html">Carpentry: Structures</a></h3>
+            <p>Learn the basics behind designing and constructing walls, floor, roofs, and small buildings. In addition to hands on experience, you will learn about the history, philosophy and practice of residential construction and sustainable carpentry methods. Students will read and discuss writings by Christopher Alexander, Harlan Hubbard, Wendell Berry, and Michael Pollan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END: .content -->
+
+    <div id="lectures" class="content">
+ 
+       <div class="page_title">
+        <h2>Lectures</h2>
+      </div>
+    <div class="columns">
+            <div class="first one-third"> <img src="images/campus.svg" alt="Icon" class="center">
+              <h4 class="aligncenter"><a href="pghforum.html">The Pittsburgh Forum</a></h4> <h6><em>August 9-12, 2013.</em></h6>
+              <p>A weekend-long academic residency focused at the intersection of theory and practice. The first annual. This year's theme: Our Life in Schools. Come join us for 4 days of eating, talking, and creating as we dig deeply into the past and present problems and purposes of school. You've likely spend a huge part of your life in school, spend a weekend to ask Why.</p>
+            </div>
+            <div class="one-third"> <img src="images/question_mark.svg" alt="Icon" class="center">
+              <h4 class="aligncenter"><a href="https://www.facebook.com/events/196517337138747/">Saxifrage 101</a></h4>
+              <h6><em>May 13, 7:00 at Voluto Coffee</em></h6>
+              <p>Come for an evening with the founders of the Saxifrage School and learn more about the ideas behind the project and share some excellent pies from Drew's Pie Supply and drinks from Commonplace Coffee. Hear about where we've been, what we're doing now, and where we're headed.</p>
+            </div>
+            <!--<div class="one-third"> <img src="images/lecturer.svg" alt="Icon" class="center">
+              <h4 class="aligncenter"><a href="http://www.facebook.com/events/246456918821038/">Post Natural History</a></h4>
+              <h6><em>January 21, 7:00 at the Center for PostNatural History, 4913 Penn Avenue</em></h6>
+              <p>Come join us for an evening discussion on the work of the Center for PostNatural History with Carnegie Mellon Art Professor and CPNH founding Director Richard Pell.</p>
+            </div>-->
+            <!--
+             <div class="first one-third"> <img src="images/lecturer.svg" alt="Icon" class="center">
+              <h4 class="aligncenter"><a href="http://www.facebook.com/events/357904860966351">Advocacy Journalism</a></h4>
+              <h6><em>November 19, 7:00 at Voluto Coffee</em></h6>
+              <p> Come join us for an evening discussion on "Advocacy Journalism" and the story of a small village in India called Koraput with guest lecturers Jen Saffron (Film, Journalism Professor) and Lynn Johnson (Photographer with National Geographic).
+
+              Our guests will share with us about the story of their work on behalf of the village of Koraput, documenting the story of 450 families beset by religious extremism in India, as well as speaking more broadly on the challenges of advocacy journalism.
+</p>
+            </div>-->           
+
+    </div>
+  </div>
+<!-- END: .content -->
+
+    <div id="donate" class="content">
+ 
+       <div class="page_title">
+        <h2>Donate</h2>
+      </div>
+
+            <h3 class="title"><span>Support Our Work</span></h3>
+        <!--<h4>If you would like to become a monthly supporter of the Saxifrage School, please go to our micro-funding campaign at <a href="https://www.givepi.com">www.givepi.com</h4></a>-->
+
+         <h3>The Saxifrage School is a not-for-profit organization working to serve the needs of students. If you would like to contribute to our work and help us change the future of higher education, please go to the <a href="http://www.saxifrageschool.org/donate.html">donation page</a></h3>
+          <!--<h6>The Saxifrage School is registered as a tax-exempt organization under section 501c3. All donations are tax-deductible.</h6>-->
+       
+         <!--<a href="https://www.givepi.com"><img align="center" src="images/givepi.png" /></a>
+        <img align="center" src="images/explanation.png" />-->
+    </div>
+
+
+    <div id="blog" class="content">
+        <div class="page_title"><h2>Saxifrage Blog</h2>
+        <div class="excerpt" id="blogfeed" align="center" max-width="20">
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+
+    <div id="contact" class="content last-content">
+ 
+       <div class="page_title">
+        <h2>Contact</h2>
+      </div>
+      <p><a href="mailto:andrew@saxifrageschool.org">E-Mail Us</a></p>
+      <p><a href="http://www.twitter.com/saxifrageschool/">Follow Us</a></p>
+      <p><a href="http://www.facebook.com/217607328251808">Facebook</a></p>
+        
+    </div>
+    <!-- END: .content --> 
+    <div class="copyright">&copy; 2012. All Rights Reserved.</div>
+  
+  </section>
+
+
+</div>
+</body>
+</html>

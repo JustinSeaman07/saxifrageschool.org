@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="images/logo.png" />
+<meta property="og:url" content="http://www.saxifrageschool.org" />
+<meta property="og:description" content=" A higher education innovation laboratory. Learn to Build, Program and Grow; ask big questions and discover what you love to do." />
+<meta property="og:title" content="The Saxifrage School" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>The Saxifrage School - Higher Ed. Innovation Laboratory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/flexslider.css" type="text/css" rel="stylesheet" media="screen">
+<link href="css/tipsy.css" type="text/css" rel="stylesheet" media="screen">
+<link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="js/jquery.visualNav.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.jigowatt.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+    google.setOnLoadCallback(initialize);
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/tumblr/EJwT");
+      feed.setNumEntries(6);
+      feed.setResultFormat(google.feeds.Feed.JSON_FORMAT);
+      feed.load(function(result) {
+        // $.each(result.feed.entries, function(){
+        //     $("section#blog div.center").appendChild("<div>this is stuff</div>");
+        //     // console.log("eq: "+);
+        //     console.log($(this));
+        //   });
+        if (!result.error) 
+              {
+           var container = document.getElementById("blogfeed");
+
+          for (var i = 0; i < result.feed.entries.length; i++) 
+          {  
+            var entry = result.feed.entries[i];
+            var last = "";
+            if ((i+1) % 3 == 0) {
+              last = " last";
+            }
+            var article = document.createElement("article");
+            article.innerHTML = '<div class="blog_entry one_third'+ last +'"><h3><a href="' + entry.link + '">' + entry.title + '</a><cite> ' + entry.author + '</cite></h3><p>' + entry.contentSnippet + '</p></div>';
+            container.appendChild(article);
+          }
+        }
+      });
+    }
+
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27226011-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div id="page">
+  <aside id="header">
+    <h3 id="logo"><a href="index.html"><img src="images/logo.png"></a></h3>
+    <nav id="main-nav">
+      <ul>
+          <li><a href="http://www.saxifrageschool.org/#home">Home</a></li>
+          <li><a  href="http://www.saxifrageschool.org/#about">About</a></li>
+          <li><a  href="http://www.saxifrageschool.org/#team">Team</a></li>
+          <li><a  href="http://www.saxifrageschool.org/#classes">Classes</a></li>
+          <!--<li><a class="menu" href="#summerforum">Forum</a></li>
+          <li><a class="menu" href="#crashcourse">CrashCourse</a></li>-->
+          <li><a  href="http://www.saxifrageschool.org/#lectures">Lectures</a></li>
+          <li><a  href="http://www.saxifrageschool.org/#donate">Donate</a></li>
+          <li><a  href="http://www.saxifrageschool.org/#blog">blog</a></li>
+      </ul>
+    </nav>
+    <div class="widget">
+      <ul class="social">
+        <li class="twitter"><a href="http://www.twitter.com/saxifrageschool" class="tip" title="Twitter"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+        <li class="facebook"><a href="http://www.facebook.com/217607328251808" class="tip" title="Facebook"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <div class="view">
+        <h4>Viewing</h4>
+        <div class="view_holder"> <span class="monitor">&nbsp;</span> <span class="ipad">&nbsp;</span> <span class="iphone">&nbsp;</span> </div>
+      </div>
+    </div>
+  </aside>
+  <section id="main">
+    <div id="home" class="content aligncenter">
+         
+          <h3>Thanks for completing the form. <br>We're thrilled to have you join us for an upcoming class! <br>Please submit payment below to complete your registration.</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="L4AD3K4YM3YD2">
+<table>
+<tr><td><input type="hidden" name="on0" value="Choose your payment option">Choose your payment option</td></tr><tr><td><select name="os0">
+  <option value="Full Course Payment">Full Course Payment $295.00 USD</option>
+  <option value="1/2 Course Deposit">1/2 Course Deposit $147.50 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+    </div>
+
+    </section>
+  </body>
+</html>
